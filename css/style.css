@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.t-pink{
+    color: rgb(255, 0, 115);
+    font-weight: bold;
+}
+
+.team-card{
+    background-color: black;
+}
+
+.img-card{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.card-text{
+    color: white;
+    font-size: small;
+}
