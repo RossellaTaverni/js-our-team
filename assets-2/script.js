@@ -36,3 +36,25 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+console.log(teamMembers)
+
+const createMemberCard = (member) => {
+  const card = `<div class="col-12 col-md-6 col-lg-4">
+                  <div class="team-card d-flex mb-5">
+                      <div class="card-image">
+                          <img src="./assets-2/${member.img}" alt="${member.name}" class="img-card">
+                      </div>
+                      <div class="card-text text-sm-start lh-sm">
+                          <h5 class="fw-bold pt-2">${member.name}</h5>
+                          <div class="fw-light pb-2">${member.role}</div>
+                          <div class="text-info">${member.email}</div>
+                      </div>
+                  </div>
+                </div>`;
+
+  document.getElementById('team-members').innerHTML += card;
+}
+
+for(let i = 0; i < teamMembers.length; i++) {
+  createMemberCard(teamMembers[i]);
+}
